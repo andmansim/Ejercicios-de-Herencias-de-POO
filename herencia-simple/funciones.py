@@ -8,10 +8,8 @@ class Punto2D:
         self.y = self.y + b
         return self.x, self.y
 
-class Punto3D:
-    def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
+class Punto3D(Punto2D):
+    def __init__(self,z):
         self.z = z
     
     def traslacion(self, a, b, c):
@@ -20,9 +18,7 @@ class Punto3D:
         self.z = self.z + c
 
 a = Punto2D(1,5) #a es un objeto de la clase, nos crea las coordenadas del punto
+print("A = X: {} ; Y: {}".format(a.x, a.y))
 
-print(a.x,a.y)
-print("A = {}".format(a.y))
-
-
-print(a.traslacion(-1, -2))
+a.traslacion(-1, -2)
+print("A = X: {} ; Y: {}".format(a.x, a.y))
