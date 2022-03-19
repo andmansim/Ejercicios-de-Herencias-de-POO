@@ -20,7 +20,3 @@ class Punto3D(Punto2D):
         self.z = self.z + c
         return self.x, self.y, self.z
 
-b = Punto3D(2, 5, 7)
-print("B = X: {} ; Y: {} ; Z: {} ".format(b.x, b.y, b.z))
-b.traslacion1(1, 3, 2)
-print("A = X: {} ; Y: {}; Z: {} ".format(b.x, b.y, b.z))
