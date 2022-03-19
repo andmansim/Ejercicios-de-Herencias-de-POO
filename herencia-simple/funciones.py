@@ -14,8 +14,11 @@ class Punto3D(Punto2D):
         Punto2D.__init__(self, x, y) #cogemos el constructor de la clase base
         self.z = z
     
-    def traslacion(self, c):
+    def traslacion1(self,a, b, c):
+        self.x = self.x + a
+        self.y = self.y + b
         self.z = self.z + c
+        return self.x, self.y, self.z
 
 a = Punto2D(1,5) #a es un objeto de la clase, nos crea las coordenadas del punto
 print("A = X: {} ; Y: {}".format(a.x, a.y))
@@ -25,5 +28,5 @@ print("A = X: {} ; Y: {}".format(a.x, a.y))
 
 b = Punto3D(2, 5, 7)
 print("B = X: {} ; Y: {} ; Z: {} ".format(b.x, b.y, b.z))
-b.traslacion(1, 3, 2)
+b.traslacion1(1, 3, 2)
 print("A = X: {} ; Y: {}; Z: {} ".format(b.x, b.y, b.z))
