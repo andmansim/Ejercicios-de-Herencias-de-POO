@@ -9,11 +9,12 @@ class B(A):
         
 class C(A):
     def __init__(self, a, c):
-        super.__init__()
+        A.__init__(self, a)
         self.c = c
 
 class D(B, C):
-    pass
+    def __init__(self, a, b, c):
+        super.__init__(self, a, b, c)
 
 d = D(1, 2, 3)
 print(isinstance(d, A),isinstance(d, B),isinstance(d, C))
