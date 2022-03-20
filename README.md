@@ -8,4 +8,4 @@ https://github.com/andmansim/Ejercicios-de-Herencias-de-POO.git
 
 Primer ejercicio: Herencia simple.
 Diagrama UML:
-![diagrama UML herencia simple](/here)
+![diagrama UML herencia simple](/herencia-simple/herencia_simple.jpg)
