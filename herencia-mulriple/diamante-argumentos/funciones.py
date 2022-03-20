@@ -14,7 +14,9 @@ class C(A):
 
 class D(B, C):
     def __init__(self, a, b, c):
-        super.__init__(self, a, b, c)
+        B.__init__(self, a, b)
+        C.__init__(self, a, c)
+        
 
 d = D(1, 2, 3)
 print(isinstance(d, A),isinstance(d, B),isinstance(d, C))
