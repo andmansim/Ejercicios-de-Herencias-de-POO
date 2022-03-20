@@ -5,4 +5,9 @@ class A:
 class B(A):
     def __init__(self, a, b):
         A.__init__(self, a)
-        self.b = B
+        self.b = b
+        
+class C(A):
+    def __init__(self, a, c):
+        A.__init__(self, a)
+        self.c = c
