@@ -74,3 +74,17 @@ class Punto3D(Punto2D):
         self.z = self.z + c
         return self.x, self.y, self.z
 ```
+
+En el segundo ejercicio hemos tenido que responder a una pregunta, cuya respuesta es la siguiente:
+```
+#Este programa en la salida estandar muestra:
+'''
+a
+b
+bb
+bb
+c
+cc
+c
+'''
+```
