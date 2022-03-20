@@ -17,7 +17,3 @@ class D(B, C):
         B.__init__(self, a, b)
         C.__init__(self, a, c)
         
-
-d = D(1, 2, 3)
-print(isinstance(d, A),isinstance(d, B),isinstance(d, C))
-print(d.a, d.b, d.c)
