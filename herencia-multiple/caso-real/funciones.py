@@ -16,13 +16,28 @@ class CASA:
 
 print("introduce la medida de la superficie de las ventanas")
 print("ventana de la pared norte:")
-v_n = input() #superficie de la ventana norte
+v_n = input()
 print("ventana de la pared sur:") 
 v_s = input()
 print("ventana de la pared este:")
 v_e = input()
 print("ventana de la pared oeste:")
 v_o = input()
+
 casa = CASA(v_n, v_s, v_e, v_o)
 suma = casa.superficie_acristalada()
-print(suma)
+print("Esta es la superficie total de las ventanas: " + str(suma))
+
+print("introduce la medida de la superficie de las paredes cortina")
+print("cortina norte:")
+c_n = input()
+print("cortina sur:") 
+c_s = input()
+print("cortina este:")
+c_e = input()
+print("cortina oeste:")
+c_o = input()
+
+paredes_cortina = CASA(c_n, c_s, c_e, c_o)
+suma = paredes_cortina.superficie_acristalada()
+print("Esta es la superficie total de las paredes cortina: " + str(suma))
