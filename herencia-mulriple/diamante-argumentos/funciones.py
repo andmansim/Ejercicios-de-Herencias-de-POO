@@ -13,6 +13,8 @@ class C(A):
         self.c = c
 
 class D(B, C):
-    def __init__(self, b, c, d):
-        super.__init__()
-        self.d = d
+    pass
+
+d = D(1, 2, 3)
+print(isinstance(d, A),isinstance(d, B),isinstance(d, C))
+print(d.a, d.b, d.c)
