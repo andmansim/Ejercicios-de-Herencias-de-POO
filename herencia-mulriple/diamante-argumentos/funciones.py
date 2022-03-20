@@ -9,11 +9,10 @@ class B(A):
         
 class C(A):
     def __init__(self, a, c):
-        A.__init__(self, a)
+        super.__init__()
         self.c = c
 
 class D(B, C):
     def __init__(self, b, c, d):
-        B.__init__(self, b)
-        C.__init__(self, c)
+        super.__init__()
         self.d = d
