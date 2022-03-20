@@ -88,3 +88,14 @@ cc
 c
 '''
 ```
+Los siguientes ejercicios son de herencia múltiple, el primero es diamante-argumentos.
+Su diagrama UML es el siguiente:
+
+![diagrama UML herencia simple](/herencia-multiple/diamante-argumentos.jpg)
+
+El segundo es diamante-argumentos.
+Su diagrama UML es el siguiente:
+
+![diagrama UML herencia simple](/herencia-multiple/diamanteargumentos.jpg)
+
+
