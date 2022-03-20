@@ -91,7 +91,17 @@ c
 Los siguientes ejercicios son de herencia múltiple, el primero es diamante-argumentos.
 Su diagrama UML es el siguiente:
 
-![diagrama UML herencia simple](/herencia-multiple/diamante-argumentos.jpg)
+![diagrama UML herencia simple](/herencia-multiple/diamante-argumentos/diamante.jpg)
+
+```
+import funciones
+if __name__ == "__main__":
+    d = funciones.D(1, 2, 3)
+    print(isinstance(d, funciones.A),isinstance(d, funciones.B),isinstance(d, funciones.C))
+    print(d.a, d.b, d.c)    
+    
+
+```
 
 El segundo es diamante-argumentos.
 Su diagrama UML es el siguiente:
